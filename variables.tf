@@ -25,7 +25,7 @@ EOT
     description                 = optional(string)
     display_name_exclude_filter = optional(set(string))
     display_name_filter         = optional(set(string))
-    enabled                     = optional(bool, true)
+    enabled                     = optional(bool) # Default: true
   }))
 }
 
