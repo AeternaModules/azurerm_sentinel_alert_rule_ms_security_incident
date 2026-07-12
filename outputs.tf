@@ -1,3 +1,7 @@
+output "sentinel_alert_rule_ms_security_incidents_id" {
+  description = "Map of id values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.id }
+}
 output "sentinel_alert_rule_ms_security_incidents_alert_rule_template_guid" {
   description = "Map of alert_rule_template_guid values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
   value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.alert_rule_template_guid }
