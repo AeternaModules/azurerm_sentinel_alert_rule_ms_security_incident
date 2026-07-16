@@ -1,45 +1,45 @@
 output "sentinel_alert_rule_ms_security_incidents_id" {
   description = "Map of id values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.id }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.id if v.id != null && length(v.id) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_alert_rule_template_guid" {
   description = "Map of alert_rule_template_guid values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.alert_rule_template_guid }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.alert_rule_template_guid if v.alert_rule_template_guid != null && length(v.alert_rule_template_guid) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_description" {
   description = "Map of description values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.description }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.description if v.description != null && length(v.description) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_display_name" {
   description = "Map of display_name values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.display_name }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.display_name if v.display_name != null && length(v.display_name) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_display_name_exclude_filter" {
   description = "Map of display_name_exclude_filter values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.display_name_exclude_filter }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.display_name_exclude_filter if v.display_name_exclude_filter != null && length(v.display_name_exclude_filter) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_display_name_filter" {
   description = "Map of display_name_filter values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.display_name_filter }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.display_name_filter if v.display_name_filter != null && length(v.display_name_filter) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_enabled" {
   description = "Map of enabled values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.enabled }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.enabled if v.enabled != null }
 }
 output "sentinel_alert_rule_ms_security_incidents_log_analytics_workspace_id" {
   description = "Map of log_analytics_workspace_id values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.log_analytics_workspace_id }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.log_analytics_workspace_id if v.log_analytics_workspace_id != null && length(v.log_analytics_workspace_id) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_name" {
   description = "Map of name values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.name }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.name if v.name != null && length(v.name) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_product_filter" {
   description = "Map of product_filter values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.product_filter }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.product_filter if v.product_filter != null && length(v.product_filter) > 0 }
 }
 output "sentinel_alert_rule_ms_security_incidents_severity_filter" {
   description = "Map of severity_filter values across all sentinel_alert_rule_ms_security_incidents, keyed the same as var.sentinel_alert_rule_ms_security_incidents"
-  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.severity_filter }
+  value       = { for k, v in azurerm_sentinel_alert_rule_ms_security_incident.sentinel_alert_rule_ms_security_incidents : k => v.severity_filter if v.severity_filter != null && length(v.severity_filter) > 0 }
 }
 
